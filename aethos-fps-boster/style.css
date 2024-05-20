@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+.navbar{
+    position: fixed;
+    top: -60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 90px;
+    margin: auto;
+    transition: .5s;
+    overflow: hidden;
+}
+
+.active{
+    top: 0;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navbar ul li{
+    list-style: none;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    font-size: 2rem;
+}
+
+.header{
+    height: 100vh;
+    background: linear-gradient(to top, #0a0a11,#1d1724);
+}
+
+.header .container{
+    color: white;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1120px;
+}
+  
+.titulo {
+    font-family: "IBM Plex Mono";
+    animation: blink .5s step-end infinite alternate, typing 3s;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-size: 3em;
+    font-weight: 500;
+}
+
+.wrapper{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.subtitulo{
+    position: relative;
+    animation: appear 3s forwards;
+    animation-delay: 1.5s;
+    white-space: nowrap;
+    overflow: hidden;
+    top: -40px;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.bxs-rocket{
+    font-size: 1.3rem;
+}
+
+.porque{
+    height: 100vh;
+    background-color: #0a0a11;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.porque .container{
+    max-width: 1120px;
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.content{
+    max-width: 700px;
+}
+
+.content h1{
+    text-align: center;
+}
+
+.motivo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 200px;
+}
+
+.motivo h4{
+    font-size: 2rem;
+}
+
+.motivo p{
+    font-weight: 200;
+}
+
+.porque-icon{
+    font-size: 4rem;
+    margin-top: 1rem;
+}
+
+
+.reviews{
+    height: 100vh;
+    background-color: #0a0a11;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.reviews .container{
+    max-width: 1120px;
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.review-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(45deg, #0a0a11, #1d1724);
+    border: 1px solid rgba(255, 255, 255, 0.445);
+    border-radius: 5px;
+    width: 300px;
+    min-height: 150px;
+    max-height: 150px;
+    padding: 1rem;
+    transition: .3s;
+}
+
+.review-card:hover{
+    border-color: rgba(255, 255, 255, 0.87);;
+}
+
+.info{
+    max-width: 920px;
+}
+
+.info .motivo-text{
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.info .descricao{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.11);
+}
+
+.info h1{
+    text-align: center;
+}
+
+.info a{
+    color: rgba(255, 255, 255, 0.11);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.info a:hover{
+    color: rgba(255, 255, 255, 0.37);
+}
+
+.review{
+    height: 50px;
+}
+
+.user{
+    font-family: "IBM Plex Mono",sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.stars{
+    padding-top: 1rem;
+}
+
+.download{
+    height: 100vh;
+    background-color: #0a0a11;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.bxs-download{
+    font-size: 1.6rem;
+}
+
+.download .container{
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.download-box a{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    transition: .3s;
+}
+
+.download-box a:hover{
+    border-color: #674192;
+}
+
+
+
+.download-box a{
+    color: white;
+    text-decoration: none;
+}
+
+.specs{
+    max-width: 800px;
+}
+
+.specs p{
+    color: rgba(255, 255, 255, 0.11);
+    text-align: center;
+}
+
+.image{
+    width: 500px;
+}
+
+.gradient{
+    background: linear-gradient(to left,#674192,#4d3d5f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.reverse-gradient{
+    background: linear-gradient(to right,#674192,#4d3d5f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+  
+  @keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 14ch; /* Alteração para auto */
+    }
+  }
+
+  @keyframes appear{
+    to{
+        top: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+  
+  @media only screen and (max-width: 600px){
+
+    .navbar{
+        padding: 5px 40px;
+        backdrop-filter: blur(2px);
+    }
+
+    .download{
+        display: none;
+    }
+
+    .pc-only{
+        display: none;
+    }
+    }
+    
